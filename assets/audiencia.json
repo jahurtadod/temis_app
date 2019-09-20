@@ -1,0 +1,80 @@
+{
+    "nombre": "Formulación de cargos",
+    "descripcion": "El día 17 de junio del presente año en el cantón Quito, provincia de Pichincha el señor Juan Plaza se dirigía a su trabajo como de costumbre. De repente se encuentra por casualidad con el señor José Anteparra, con quien mantiene una breve conversación . El señor José Anteparra se retira del lugar, alejándose en dirección a la calle mariana de Jesús, no habían pasado mas de 5 minutos cuando es detenido por el oficial Juan Mejía",
+    "ruta": [
+        {
+            "nombre": "Formulación de cargos",
+            "rol": "Fiscalia",
+            "dialogo": [
+                {
+                    "id": 1,
+                    "nombre": "Damos comienzo a la presente audiencia, el propósito es formular cargos, señora secretaria, verifique la presencia de las partes procesales",
+                    "descripcion": "",
+                    "rol": "Juez",
+                    "siguiente": 2
+                },
+                {
+                    "id": 2,
+                    "nombre": "Declaro instalada la presente audiencia",
+                    "descripcion": "",
+                    "rol": "Juez",
+                    "siguiente": 3
+                },
+                {
+                    "id": 3,
+                    "nombre": "¿Existen criterios sobre legalidad de la aprehensión?",
+                    "descripcion": "",
+                    "rol": "Juez",
+                    "siguiente": 4
+                },
+                {
+                    "id": 4,
+                    "nombre": "Siendo así, entonces declaro la legalidad de la aprehensión",
+                    "descripcion": "",
+                    "rol": "Juez"
+                },
+                {
+                    "id": 5,
+                    "nombre": "No tengo nada que alegar",
+                    "descripcion": "",
+                    "rol": "Defensa"
+                },
+                {
+                    "id": 6,
+                    "nombre": "No tengo nada que alegar",
+                    "descripcion": "",
+                    "rol": "Fiscalia"
+                },
+                {
+                    "id": 7,
+                    "nombre": "Ahora procederé a señalar las pruebas que fundamenten mi acusación",
+                    "descripcion": "",
+                    "rol": "Fiscalia"
+                }
+            ],
+            "opcion": [
+                {
+                    "pregunta": "",
+                    "opcion": [
+                        {
+                            "descripcion": "Art. 221.- Organización o financiamiento para la producción o tráfico ilícitos de sustancias catalogadas sujetas a fiscalización",
+                            "siguiente": 6
+                        },
+                        {
+                            "descripcion": "Art. 220.- Tráfico ilícito de sustancias catalogadas sujetas a fiscalización",
+                            "siguiente": 7
+                        },
+                        {
+                            "descripcion": "Art. 223.- Suministro de sustancias estupefacientes, psicotrópicas o preparados que las contengan",
+                            "siguiente": 7
+                        }
+                    ]
+                }
+            ],
+            "sentencia": {
+                "resolucion": "",
+                "descripcion": ""
+            }
+        }
+    ]
+}

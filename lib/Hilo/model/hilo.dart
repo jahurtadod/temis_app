@@ -5,152 +5,127 @@ Hilo hiloFromJson(String str) => Hilo.fromJson(json.decode(str));
 String hiloToJson(Hilo data) => json.encode(data.toJson());
 
 class Hilo {
-  String nombre;
-  String descripcion;
-  List<Ruta> ruta;
+  String title;
+  String description;
+  List<Route> route;
 
   Hilo({
-    this.nombre,
-    this.descripcion,
-    this.ruta,
+    this.title,
+    this.description,
+    this.route,
   });
 
   factory Hilo.fromJson(Map<String, dynamic> json) => Hilo(
-        nombre: json["nombre"],
-        descripcion: json["descripcion"],
-        ruta: List<Ruta>.from(json["ruta"].map((x) => Ruta.fromJson(x))),
+        title: json["title"],
+        description: json["description"],
+        route: List<Route>.from(json["route"].map((x) => Route.fromJson(x))),
       );
 
   Map<String, dynamic> toJson() => {
-        "nombre": nombre,
-        "descripcion": descripcion,
-        "ruta": List<dynamic>.from(ruta.map((x) => x.toJson())),
+        "title": title,
+        "description": description,
+        "route": List<dynamic>.from(route.map((x) => x.toJson())),
       };
 }
 
-class Ruta {
-  String nombre;
-  String rol;
-  List<Dialogo> dialogo;
-  List<RutaOpcion> opcion;
-  Sentencia sentencia;
+class Route {
+  String role;
+  List<Event> event;
 
-  Ruta({
-    this.nombre,
-    this.rol,
-    this.dialogo,
-    this.opcion,
-    this.sentencia,
+  Route({
+    this.role,
+    this.event,
   });
 
-  factory Ruta.fromJson(Map<String, dynamic> json) => Ruta(
-        nombre: json["nombre"],
-        rol: json["rol"],
-        dialogo:
-            List<Dialogo>.from(json["dialogo"].map((x) => Dialogo.fromJson(x))),
-        opcion: List<RutaOpcion>.from(
-            json["opcion"].map((x) => RutaOpcion.fromJson(x))),
-        sentencia: Sentencia.fromJson(json["sentencia"]),
+  factory Route.fromJson(Map<String, dynamic> json) => Route(
+        role: json["role"],
+        event: List<Event>.from(json["event"].map((x) => Event.fromJson(x))),
       );
 
   Map<String, dynamic> toJson() => {
-        "nombre": nombre,
-        "rol": rol,
-        "dialogo": List<dynamic>.from(dialogo.map((x) => x.toJson())),
-        "opcion": List<dynamic>.from(opcion.map((x) => x.toJson())),
-        "sentencia": sentencia.toJson(),
+        "role": role,
+        "event": List<dynamic>.from(event.map((x) => x.toJson())),
       };
 }
 
-class Dialogo {
+class Event {
   int id;
-  String nombre;
-  String descripcion;
-  String rol;
-  int siguiente;
+  String text;
+  String role;
+  int next;
+  List<Option> option;
+  Judgment judgment;
 
-  Dialogo({
+  Event({
     this.id,
-    this.nombre,
-    this.descripcion,
-    this.rol,
-    this.siguiente,
+    this.text,
+    this.role,
+    this.next,
+    this.option,
+    this.judgment,
   });
 
-  factory Dialogo.fromJson(Map<String, dynamic> json) => Dialogo(
+  factory Event.fromJson(Map<String, dynamic> json) => Event(
         id: json["id"],
-        nombre: json["nombre"],
-        descripcion: json["descripcion"],
-        rol: json["rol"],
-        siguiente: json["siguiente"] == null ? null : json["siguiente"],
+        text: json["text"] == null ? null : json["text"],
+        role: json["role"],
+        next: json["next"] == null ? null : json["next"],
+        option: json["option"] == null
+            ? null
+            : List<Option>.from(json["option"].map((x) => Option.fromJson(x))),
+        judgment: json["judgment"] == null
+            ? null
+            : Judgment.fromJson(json["judgment"]),
       );
 
   Map<String, dynamic> toJson() => {
         "id": id,
-        "nombre": nombre,
-        "descripcion": descripcion,
-        "rol": rol,
-        "siguiente": siguiente == null ? null : siguiente,
+        "text": text == null ? null : text,
+        "role": role,
+        "next": next == null ? null : next,
+        "option": option == null
+            ? null
+            : List<dynamic>.from(option.map((x) => x.toJson())),
+        "judgment": judgment == null ? null : judgment.toJson(),
       };
 }
 
-class RutaOpcion {
-  String pregunta;
-  List<OpcionOpcion> opcion;
+class Judgment {
+  String resolution;
+  String description;
 
-  RutaOpcion({
-    this.pregunta,
-    this.opcion,
+  Judgment({
+    this.resolution,
+    this.description,
   });
 
-  factory RutaOpcion.fromJson(Map<String, dynamic> json) => RutaOpcion(
-        pregunta: json["pregunta"],
-        opcion: List<OpcionOpcion>.from(
-            json["opcion"].map((x) => OpcionOpcion.fromJson(x))),
+  factory Judgment.fromJson(Map<String, dynamic> json) => Judgment(
+        resolution: json["resolution"],
+        description: json["description"],
       );
 
   Map<String, dynamic> toJson() => {
-        "pregunta": pregunta,
-        "opcion": List<dynamic>.from(opcion.map((x) => x.toJson())),
+        "resolution": resolution,
+        "description": description,
       };
 }
 
-class OpcionOpcion {
-  String descripcion;
-  int siguiente;
+class Option {
+  String text;
+  int next;
 
-  OpcionOpcion({
-    this.descripcion,
-    this.siguiente,
+  Option({
+    this.text,
+    this.next,
   });
 
-  factory OpcionOpcion.fromJson(Map<String, dynamic> json) => OpcionOpcion(
-        descripcion: json["descripcion"],
-        siguiente: json["siguiente"],
+  factory Option.fromJson(Map<String, dynamic> json) => Option(
+        text: json["text"],
+        next: json["next"],
       );
 
   Map<String, dynamic> toJson() => {
-        "descripcion": descripcion,
-        "siguiente": siguiente,
-      };
-}
-
-class Sentencia {
-  String resolucion;
-  String descripcion;
-
-  Sentencia({
-    this.resolucion,
-    this.descripcion,
-  });
-
-  factory Sentencia.fromJson(Map<String, dynamic> json) => Sentencia(
-        resolucion: json["resolucion"],
-        descripcion: json["descripcion"],
-      );
-
-  Map<String, dynamic> toJson() => {
-        "resolucion": resolucion,
-        "descripcion": descripcion,
+        "text": text,
+        "next": next,
       };
 }

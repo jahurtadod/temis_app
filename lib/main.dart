@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:temis_app/User/ui/screens/seleccionCaso.dart';
 import 'Hilo/ui/screens/chatCaso.dart';
 
 void main() => runApp(MyApp());

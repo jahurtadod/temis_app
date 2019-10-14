@@ -1,0 +1,476 @@
+{
+    "title": "Formulación de cargos",
+    "description": "El día 17 de junio del presente año en el cantón Quito, provincia de Pichincha el señor Juan Plaza se dirigía a su trabajo como de costumbre. De repente se encuentra por casualidad con el señor José Anteparra, con quien mantiene una breve conversación . El señor José Anteparra se retira del lugar, alejándose en dirección a la calle mariana de Jesús, no habían pasado mas de 5 minutos cuando es detenido por el oficial Juan Mejía",
+    "route": [
+        {
+            "role": "Fiscalía",
+            "event": [
+                {
+                    "id": 1,
+                    "text": "Damos comienzo a la presente audiencia, el propósito es formular cargos, señora secretaria, verifique la presencia de las partes procesales",
+                    "role": "Juez",
+                    "next": 2
+                },
+                {
+                    "id": 2,
+                    "text": "Declaro instalada la presente audiencia",
+                    "role": "Secretaria",
+                    "next": 3
+                },
+                {
+                    "id": 3,
+                    "text": "¿Existen criterios sobre legalidad de la aprehensión?",
+                    "role": "Juez",
+                    "next": 4
+                },
+                {
+                    "id": 4,
+                    "text": "No tengo nada que alegar",
+                    "role": "Defensa",
+                    "next": 5
+                },
+                {
+                    "id": 5,
+                    "text": "No tengo nada que alegar",
+                    "role": "Fiscalía",
+                    "next": 6
+                },
+                {
+                    "id": 6,
+                    "text": "Siendo así, entonces declaro la legalidad de la aprehensión",
+                    "role": "Juez",
+                    "next": 7
+                },
+                {
+                    "id": 7,
+                    "text": "ahora procedere a dar la teoría del caso)",
+                    "role": "Fiscalía",
+                    "next": 8
+                },
+                {
+                    "id": 8,
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "17 de junio a las 8:30 a la altura de la calle 10 de agosto el señor José Anteparra llama la atención del señor Juan Plaza con el fin de venderle drogas ambos se dirigen en dirección a un callejón ubicado en la calle Mariana de Jesús. El agente de policía Juan Mejía realizaba patrullaje de rutina, diviso a dos personas en un callejón cerca a la calle Mariana de Jesús, pero por motivos propios de su profesión, tuvo que alejarse por aproximadamente 5 minutos. Al regresar al lugar pudo notar en de la ausencia de una persona, mientras la otra yacía en el suelo desorientada, quien procede a informar al oficial de lo sucedido: había sido golpeado y le han sustraído 400 dólares que consistía en 4 denominaciones de 100 definidas como LB2988635-C, LB1128635-C, B3687635-C, LB5976873-C. El oficial Mejía inmediatamente procede a la búsqueda del señor José Anteparra, a quien logra capturar en un plazo no mayor a 3 minutos procediendo a realizar el registro de sus pertenencias de donde pudo obtener 4 billetes con denominación de 10. Inmediatamente lo traslada al lugar de los hechos donde el afectado: señor Juan Plaza lo identifica como su agresor.",
+                            "next": 9
+                        },
+                        {
+                            "text": "17 de junio a las 8:30 a la altura de la calle 10 de agosto se acerca al señor José Anteparra a Juan Plaza con el fin de venderle drogas. Las dos personas se retiran 20 metros cerca del lugar, en dirección a la calle Mariana de Jesús. El agente de policía Juan Mejía realizaba patrullaje de rutina, cuando diviso a dos personas en un callejón cerca a la calle Mariana de Jesús, pero por motivos propios de su profesión, tuvo que alejarse por aproximadamente 5 minutos. Al regresar al lugar pudo notar la presencia de solo una persona, se trataba de Juan Plaza quien procede a informar al oficial de lo sucedido, luego de ofrecerle droga, el señor juan Anteparra se dirigió hacia varios estudiantes del colegio Mejía que transitaban cerca para ofrecerles el mismo producto. El oficial Mejía inmediatamente procede a la búsqueda del señor José Anteparra, a quien logra capturar en un plazo no mayor a 3 minutos cuando logra aprehenderlo y procede a realizar el registro de sus pertenencias de donde pudo obtener 15 paquetes pequeños de aproximadamente 1 gramo cada uno, los cuales luego de procederse a un análisis se descubre como clorhidrato de cocaína. Inmediatamente lo trasladan al lugar de los hechos donde el afectado: el señor Juan Plaza, lo identifica.",
+                            "next": 20
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "text": "Ahora procederé a señalar los fundamentos de Derecho",
+                    "role": "Fiscalía",
+                    "next": 25
+                },
+                {
+                    "id": 25,
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "ROBO / Art. 189.1 COIP",
+                            "next": 10
+                        },
+                        {
+                            "text": "HURTO/ Art 196.1 COIP",
+                            "next": 21
+                        },
+                        {
+                            "text": "ROBO AGRAVADO",
+                            "next": 21
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "text": "Ahora procederé a señalar las pruebas que fundamenten mi acusación.",
+                    "role": "Fiscalía",
+                    "next": 26
+                },
+                {
+                    "id": 26,
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "Testimonio de José Plaza y las series de los 4 billetes de 100 dólares.",
+                            "next": 22
+                        },
+                        {
+                            "text": "Informe médico del traumatólogo y las series de los 5 billetes de 100 dólares.",
+                            "next": 22
+                        },
+                        {
+                            "text": "Informe médico de neurólogo y las series de los 4 billetes de 100 dólares.",
+                            "next": 11
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "text": "Con respecto a las medidas cautelares",
+                    "role": "Fiscalía",
+                    "next": 27
+                },
+                {
+                    "id": 27,
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "Solicito",
+                            "next": 12
+                        },
+                        {
+                            "text": "No solicito",
+                            "next": 12
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "text": "Como medidad cautelar solicito",
+                    "role": "Fiscalía",
+                    "next": 28
+                },
+                {
+                    "id": 28,
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "Obligación de presentarse periódicamente ante el juez.",
+                            "next": 13
+                        },
+                        {
+                            "text": "Prohibición de ausentarse en el país.",
+                            "next": 13
+                        },
+                        {
+                            "text": "Prisión preventiva.",
+                            "next": 13
+                        },
+                        {
+                            "text": "Embargo preventivo.",
+                            "next": 23
+                        }
+                    ]
+                },
+                {
+                    "id": 13,
+                    "role": "Juez",
+                    "judgment": {
+                        "description": "Es necesario observar la naturaleza de la prisión preventiva como una de las medidas más graves que se pueden imponer y su carácter excepcional (DDHH), respetar principios de necesidad, legalidad, proporcionalidad , presunción de inocencia. Así mismo la constitución señala que la libertad como un bien jurídico protegido , sin embargo, las pruebas concurridas durante la audiencia por parte de la defensa no han sido correctas e insuficientes.",
+                        "resolution": "La fiscalía ha demostrado que existen elementos de convicción claros y precisos por tanto se acepta la medida cautelar solicitada por Fiscalía: prisión preventiva",
+                        "text": "Declaro concluida la audiencia"
+                    }
+                },
+                {
+                    "id": 20,
+                    "text": "Ahora procederé a señalar los fundamentos de Derecho",
+                    "role": "Fiscalía",
+                    "next": 29
+                },
+                {
+                    "id": 29,
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "ROBO / Art. 189.1 COIP",
+                            "next": 21
+                        },
+                        {
+                            "text": "HURTO/ Art 196.1 COIP",
+                            "next": 21
+                        },
+                        {
+                            "text": "ROBO AGRAVADO",
+                            "next": 21
+                        }
+                    ]
+                },
+                {
+                    "id": 21,
+                    "text": "Ahora procederé a señalar las pruebas que fundamenten mi acusación.",
+                    "role": "Fiscalía",
+                    "next": 30
+                },
+                {
+                    "id": 30,
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "Testimonio de José Plaza y las series de los 4 billetes de 100 dólares.",
+                            "next": 22
+                        },
+                        {
+                            "text": "Informe médico del traumatólogo y las series de los 5 billetes de 100 dólares.",
+                            "next": 22
+                        },
+                        {
+                            "text": "Informe médico de neurólogo y las series de los 4 billetes de 100 dólares.",
+                            "next": 22
+                        }
+                    ]
+                },
+                {
+                    "id": 22,
+                    "text": "Con respecto a las medidas cautelares",
+                    "role": "Fiscalía",
+                    "next": 31
+                },
+                {
+                    "id": 31,
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "Solicito",
+                            "next": 23
+                        },
+                        {
+                            "text": "No solicito",
+                            "next": 23
+                        }
+                    ]
+                },
+                {
+                    "id": 23,
+                    "text": "Como medidad cautelar solicito",
+                    "role": "Fiscalía",
+                    "next": 32
+                },
+                {
+                    "id": 32,
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "Obligación de presentarse periódicamente ante el juez.",
+                            "next": 24
+                        },
+                        {
+                            "text": "Prohibición de ausentarse en el país.",
+                            "next": 24
+                        },
+                        {
+                            "text": "Prisión preventiva.",
+                            "next": 24
+                        },
+                        {
+                            "text": "Embargo preventivo.",
+                            "next": 24
+                        }
+                    ]
+                },
+                {
+                    "id": 24,
+                    "role": "Juez",
+                    "judgment": {
+                        "description": "Es necesario observar la naturaleza de la prisión preventiva como una de las medidas más graves que se pueden imponer y su carácter excepcional (DDHH).  Respetar principios de necesidad, legalidad, proporcionalidad, presunción de inocencia. Así mismo la constitución señala que la libertad como un bien jurídico protegido y en base a lo antes expuesto.",
+                        "resolution": "Se dictan las siguientes medidas cautelares: (522.1y2 COIP): •Prohibición salida del país. • Presentación periódica cada 15 días en la oficina del fiscal en el horario de 8 am a 5 pm."
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Defensa",
+            "event": [
+                {
+                    "id": 1,
+                    "text": "Damos comienzo a la presente audiencia, el propósito es formular cargos, señora secretaria, verifique la presencia de las partes procesales",
+                    "role": "Juez",
+                    "next": 2
+                },
+                {
+                    "id": 2,
+                    "text": "Declaro instalada la presente audiencia",
+                    "role": "Secretaria",
+                    "next": 3
+                },
+                {
+                    "id": 3,
+                    "text": "¿Existen criterios sobre legalidad de la aprehensión?",
+                    "role": "Juez",
+                    "next": 4
+                },
+                {
+                    "id": 4,
+                    "text": "No tengo nada que alegar",
+                    "role": "Defensa",
+                    "next": 5
+                },
+                {
+                    "id": 5,
+                    "text": "No tengo nada que alegar",
+                    "role": "Fiscalía",
+                    "next": 6
+                },
+                {
+                    "id": 6,
+                    "text": "Siendo así, entonces declaro la legalidad de la aprehensión",
+                    "role": "Juez",
+                    "next": 7
+                },
+                {
+                    "id": 7,
+                    "text": "(Ahora procederé a dar la teoría del caso)",
+                    "role": "Defensa",
+                    "next": 8
+                },
+                {
+                    "id": 8,
+                    "role": "Defensa",
+                    "option": [
+                        {
+                            "text": "El día 17 de junio del presente año aproximadamente a las 8:30 de la mañana, el señor José Anteparra se dirigía a la parada de buses ubicada en la calle Mariana de Jesús. Mientras caminaba  logra visualizar a un hombre  (el señor Juan Plaza ) en un callejón cerca a la calle Mariana de Jesús y se le acerca para cerciorarse de quien se trataba pero procedió a retirarse inmediatamente dado que su entrada al trabajo era a las 9h00 y antes de ingresar, debía pasar por una entidad bancaria donde depositaria los valores de 400 dólares americanos, que su jefe el señor Juan Cueva propietario del comercial Cueva donde labora, le había encargado el día anterior que depositara , dado que se le hacía imposible hacerlo por varias actividades que debía realizar fuera de la provincia. El señor José Anteparra siguió caminando con Dirección a su trabajo, pero fue aprehendido en un lapso no mayor a 5 minutos por el oficial de policía Juan Mejía.",
+                            "next": 9
+                        },
+                        {
+                            "text": "El día 17 de junio del presente año, el señor José Anteparra se dirigía como de costumbre a su clase de Lógica jurídica, misma que cursaba en la Universidad Central del Ecuador en horario de 9:00 Am a 10:00 am, mientras caminaba en dirección a la parada de autobús ubicada en la calle mariana de Jesús, logra divisar a un hombre que caminaba en dirección a in callejón cerca a la calle antes mencionadas, José Anteparra se detuvo un momento para tratar de identificar a la persona y se dio cuenta que se trataba del señor Juan plaza, inmediatamente prosiguió su camino, pero en el transcurso se encontró con varios estudiantes del colegio Mejía, a quien consulto sobre si ya había pasado el autobús con dirección a su universidad, dado que necesitaba llegar a tiempo. Pasados no más de 5 minutos el señor Anteparra es aprehendido por el oficial de policía Juan Mejía.",
+                            "next": 20
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "text": "Ahora procederé a señalar las pruebas que fundamenten mi acusación",
+                    "role": "Defensa",
+                    "option": [
+                        {
+                            "text": "Certificado de buena conducta otorgado por el señor Mario Alcides, vecino del acusado.",
+                            "next": 21
+                        },
+                        {
+                            "text": "Certificación conferida por el señor Carlos Pardo secretario de la Universidad central de Ecuador.",
+                            "next": 21
+                        },
+                        {
+                            "text": "Contrato debidamente registrado en el ministerio de relaciones laborales del cantón Quito.",
+                            "next": 10
+                        },
+                        {
+                            "text": "Testimonio de los compañeros de trabajo.",
+                            "next": 10
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "text": "Con respecto a las medidas cautelares",
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "Solicito",
+                            "next": 11
+                        },
+                        {
+                            "text": "No solicito",
+                            "next": 11
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "text": "Como medida cautelar solicito",
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "Obligación de presentarse periódicamente ante el juez.",
+                            "next": 12
+                        },
+                        {
+                            "text": "Prohibición de ausentarse en el país.",
+                            "next": 12
+                        },
+                        {
+                            "text": "Prisión preventiva.",
+                            "next": 22
+                        },
+                        {
+                            "text": "Embargo preventivo.",
+                            "next": 22
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "role": "Juez",
+                    "judgment": {
+                        "description": "Es necesario observar la naturaleza de la prisión preventiva como una de las medidas más graves que se pueden imponer y su carácter excepcional (DDHH).  Respetar principios de necesidad, legalidad, proporcionalidad, presunción de inocencia. Así mismo la constitución señala que la libertad como un bien jurídico protegido y en base a lo antes expuesto.",
+                        "resolution": "Se dictan las siguientes medidas cautelares: (522.1y2 COIP): •Prohibición salida del país. • Presentación periódica cada 15 días en la oficina del fiscal en el horario de 8 am a 5 pm.",
+                        "text": "Declaro concluida la audiencia"
+                    }
+                },
+                {
+                    "id": 20,
+                    "text": "Ahora procederé a señalar las pruebas que fundamenten mi acusación",
+                    "role": "Defensa",
+                    "option": [
+                        {
+                            "text": "Certificado de buena conducta otorgado por el señor Mario Alcides, vecino del acusado.",
+                            "next": 21
+                        },
+                        {
+                            "text": "Certificación conferida por el señor Carlos Pardo secretario de la Universidad central de Ecuador.",
+                            "next": 21
+                        },
+                        {
+                            "text": "Contrato debidamente registrado en el ministerio de relaciones laborales del cantón Quito.",
+                            "next": 21
+                        },
+                        {
+                            "text": "Testimonio de los compañeros de trabajo.",
+                            "next": 21
+                        }
+                    ]
+                },
+                {
+                    "id": 21,
+                    "text": "Con respecto a las medidas cautelares",
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "Solicito",
+                            "next": 22
+                        },
+                        {
+                            "text": "No solicito",
+                            "next": 22
+                        }
+                    ]
+                },
+                {
+                    "id": 22,
+                    "text": "Como medidad cautelar solicito",
+                    "role": "Fiscalía",
+                    "option": [
+                        {
+                            "text": "Obligación de presentarse periódicamente ante el juez.",
+                            "next": 23
+                        },
+                        {
+                            "text": "Prohibición de ausentarse en el país.",
+                            "next": 23
+                        },
+                        {
+                            "text": "Prisión preventiva.",
+                            "next": 23
+                        },
+                        {
+                            "text": "Embargo preventivo.",
+                            "next": 23
+                        }
+                    ]
+                },
+                {
+                    "id": 23,
+                    "role": "Juez",
+                    "judgment": {
+                        "description": "Es necesario observar la naturaleza de la prisión preventiva como una de las medidas más graves que se pueden imponer y su carácter excepcional (DDHH), respetar principios de necesidad, legalidad, proporcionalidad , presunción de inocencia. Así mismo la constitución señala que la libertad como un bien jurídico protegido , sin embargo, las pruebas concurridas durante la audiencia por parte de la defensa no han sido correctas e insuficientes.",
+                        "resolution": "Fiscalía ha demostrado que existen elementos de convicción claros y precisos por tanto se acepta la medida cautelar solicitada por Fiscalía: (Prisión preventiva)"
+                    }
+                }
+            ]
+        }
+    ]
+}

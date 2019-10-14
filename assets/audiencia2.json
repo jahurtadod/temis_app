@@ -3,7 +3,7 @@
     "description": "El día 17 de junio del presente año en el cantón Quito, provincia de Pichincha el señor Juan Plaza se dirigía a su trabajo como de costumbre. De repente se encuentra por casualidad con el señor José Anteparra, con quien mantiene una breve conversación . El señor José Anteparra se retira del lugar, alejándose en dirección a la calle mariana de Jesús, no habían pasado mas de 5 minutos cuando es detenido por el oficial Juan Mejía",
     "route": [
         {
-            "role": "Fiscalia",
+            "role": "Fiscalía",
             "event": [
                 {
                     "id": 1,
@@ -14,13 +14,13 @@
                 {
                     "id": 2,
                     "text": "Declaro instalada la presente audiencia",
-                    "role": "Juez",
+                    "role": "Secretaria",
                     "next": 3
                 },
                 {
                     "id": 3,
                     "text": "¿Existen criterios sobre legalidad de la aprehensión?",
-                    "role": "Juez",
+                    "role": "Secretaria",
                     "next": 4
                 },
                 {
@@ -38,18 +38,18 @@
                 {
                     "id": 6,
                     "text": "No tengo nada que alegar",
-                    "role": "Fiscalia",
+                    "role": "Fiscalía",
                     "next": 9
                 },
                 {
                     "id": 7,
                     "text": "Ahora procederé a señalar las pruebas que fundamenten mi acusación",
-                    "role": "Fiscalia",
+                    "role": "Fiscalía",
                     "next": 9
                 },
                 {
                     "id": 8,
-                    "role": "Fiscalia",
+                    "role": "Fiscalía",
                     "option": [
                         {
                             "text": "Art. 221.- Organización o financiamiento para la producción o tráfico ilícitos de sustancias catalogadas sujetas a fiscalización",
@@ -67,10 +67,10 @@
                 },
                 {
                     "id": 9,
-                    "role": "Fiscalia",
+                    "role": "Fiscalía",
                     "judgment": {
                         "resolution": "CULPABLE",
-                        "description": "El es un subnormal"
+                        "description": "Continuando con el siguiente caso es Culpa, debido a que el conductor del camión si bien cometió un error al ir en contravía, lo que termino en choque y lesiones en una tercera persona, el conductor del camión no tuvo intención de ocasionar daños a dicha persona, además cabe recalcar que las lesiones en el señor se produjeron por golpes con lo que el camión transportaba en este caso con cañas guadua."
                     }
                 }
             ]
